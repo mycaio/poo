@@ -1,17 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
-        /*Livro novo = new Livro(01, "Branca de neve", "caio", "novo");
 
-        novo.info();
-
-        Pessoa caio = new Pessoa(151, "caio", 988, "caio@gmail");
-
-        caio.info();
-         */
-        Scanner scanner = new Scanner(System.in);
-
+    public static void menuPrincipal(){
         System.out.println("     print(\"\"\"\n" +
                 "       .--.                   .---.           \n" +
                 "   .---|__|           .-.     |~~~|   \n" +
@@ -29,16 +20,31 @@ public class Main {
                 "3) Empréstimo\n" +
                 "4) Relatório\n" +
                 "5) Sair  ");
+    }
 
-        int resposta = scanner.nextInt();
 
-        switch (resposta){
-            case 1:
+    public static void main(String[] args){
 
-                break;
-            case 2:
-                Pagepessoa.pagepessoa();
-                break;
-        }
+        Scanner scanner = new Scanner(System.in);
+
+        int resposta;
+        do{
+            menuPrincipal();
+            resposta = scanner.nextInt();
+
+            switch (resposta) {
+                case 1:
+                    PageLivro.pagelivro();
+
+                    break;
+                case 2:
+                    Pagepessoa.pagepessoa();
+
+                    break;
+
+            }
+        } while (resposta != 5);
+
+
     }
 }

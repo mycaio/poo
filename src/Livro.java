@@ -15,7 +15,7 @@ public class Livro {
     }
 
     public void info(){
-        System.out.println("codigo: " + this.codigo + ", titulo: " + this.titulo + ", autor: " + this.autor + ", estado: " + this.estado + ", Situação" + this.situacao);
+        System.out.println("codigo: " + this.codigo + ", titulo: " + this.titulo + ", autor: " + this.autor + ", estado: " + this.estado + ", Situação: " + this.situacao);
     }
 
     public String getSituacao(){
