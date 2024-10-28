@@ -1,5 +1,18 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
+public class Pagepessoa{
+    public static void pagePessoa(){
+        ArrayList<Pessoa> listaPessoas = new ArrayList<>();
+        Sca
+    }
+}
+
+
+
+
+
+/*
 public class Pagepessoa {
     public static void pagepessoa(){
         System.out.println("1) Cadastrar Pessoa\n" +
@@ -28,3 +41,4 @@ public class Pagepessoa {
         }
     }
 }
+*/
